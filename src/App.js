@@ -6,7 +6,7 @@ import { BsFillEmojiSmileFill } from "react-icons/bs";
 import { AiFillGithub } from "react-icons/ai";
 import { BsLinkedin } from "react-icons/bs";
 import { RiFilePaper2Fill } from "react-icons/ri";
-import { VscDebugBreakpointLog } from "react-icons/vsc";
+import { VscDebugBreakpointLog, VscCircleFilled } from "react-icons/vsc";
 
 export default function Home() {
   // function and logic to handle copy text to clipboard
@@ -183,21 +183,51 @@ export default function Home() {
           <div className="project-wrapper-1">
             <h3 style={{ textAlign: "center" }}>VendyLA - Street Vending Business Locator</h3>
             <p style={{ textAlign: "center" }}>April 2023 - May 2023</p>
+            <p style={{ paddingLeft: "5%", paddingRight: "5%", fontSize: "18px" }}><VscCircleFilled /> A Food and Merchandise web application with a focus on street vending in Los Angeles, addressing the underrepresentation of street vendors in existing reviewer applications</p>
+
+            <p style={{ paddingLeft: "5%", paddingRight: "5%", fontSize: "18px" }}><VscCircleFilled /> Developed using React, JavaScript for the front-end, and Express, Node for the backend</p>
+
+            <p style={{ paddingLeft: "5%", paddingRight: "5%", fontSize: "18px" }}><VscCircleFilled /> Integrated Google Maps API to enable location based services and Yelp API for comprehensive data on street vendors</p>
+
+            <p style={{ paddingLeft: "5%", paddingRight: "5%", fontSize: "18px" }}><VscCircleFilled /> Implemented Google Firebase SDK to enhance functionality by integrating our own street vendor location information on top of the data obtained from Yelp</p>
           </div>
 
           <div className="project-wrapper-2">
             <h3 style={{ textAlign: "center" }}>Multimedia System Design - Marks Automation Script</h3>
             <p style={{ textAlign: "center" }}>January 2023 - May 2023</p>
+
+            <p style={{ paddingLeft: "5%", paddingRight: "5%", fontSize: "18px" }}><VscCircleFilled /> An automation script using Python, that automates 4 manual positions in the matter of seconds</p>
+
+            <p style={{ paddingLeft: "5%", paddingRight: "5%", fontSize: "18px" }}><VscCircleFilled /> Python code reads proprietary data from Baselight and Flame machines to calculate filesystem locations of frames</p>
+
+            <p style={{ paddingLeft: "5%", paddingRight: "5%", fontSize: "18px" }}><VscCircleFilled /> All requests saved to MongoDB and can be used for data analysis and worker efficiency</p>
+
+            <p style={{ paddingLeft: "5%", paddingRight: "5%", fontSize: "18px" }}><VscCircleFilled /> Exports are basic CSV files to XLS files with timecode and thumbnail preview that can be uploaded to Frame.IO and/or Shotgrid</p>
           </div>
 
           <div className="project-wrapper-1">
             <h3 style={{ textAlign: "center" }}>MelloAmp - DMCA Free Music Player</h3>
             <p style={{ textAlign: "center" }}>August 2022 - May 2023</p>
+
+            <p style={{ paddingLeft: "5%", paddingRight: "5%", fontSize: "18px" }}><VscCircleFilled /> Developed a full stack DMCA-free music player that allowed streaming of non-copyrighted music</p>
+
+            <p style={{ paddingLeft: "5%", paddingRight: "5%", fontSize: "18px" }}><VscCircleFilled /> Utilized MongoDB for efficient data storage, ensuring smooth retrieval and management of music metadata</p>
+
+            <p style={{ paddingLeft: "5%", paddingRight: "5%", fontSize: "18px" }}><VscCircleFilled /> Employed React.js on the front-end to create a user friendly interface and Node.js to handle server-side logic enabling communication between the front-end and MongoDB</p>
+
           </div>
 
           <div className="project-wrapper-2">
             <h3 style={{ textAlign: "center" }}>Video Rental Shop Inventroy Management System</h3>
             <p style={{ textAlign: "center" }}>Summer 2021</p>
+
+            <p style={{ paddingLeft: "5%", paddingRight: "5%", fontSize: "18px" }}><VscCircleFilled /> Developed a Java-based application to simulate and manage the inventory of a video rental shop</p>
+
+            <p style={{ paddingLeft: "5%", paddingRight: "5%", fontSize: "18px" }}><VscCircleFilled /> Implemented a system to store and update data on movies, including total number of DVDs, DVDs currently in stock, and waitlists for sold-out DVDs</p>
+
+            <p style={{ paddingLeft: "5%", paddingRight: "5%", fontSize: "18px" }}><VscCircleFilled /> Designed functionally to add and removes names from waitlists, and saved and restored waitlists upon program termination</p>
+
+            <p style={{ paddingLeft: "5%", paddingRight: "5%", fontSize: "18px" }}><VscCircleFilled /> Implemented commands for inventory management, including listing titles in order, finding items by title, and replacing/inserting new inventory</p>
           </div>
 
         </div>
