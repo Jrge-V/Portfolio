@@ -5,6 +5,7 @@ import clipboardCopy from "clipboard-copy";
 import { BsFillEmojiSmileFill } from "react-icons/bs";
 import { AiFillGithub } from "react-icons/ai";
 import { BsLinkedin } from "react-icons/bs";
+import { FiBookOpen } from "react-icons/fi";
 
 export default function Home() {
   // function and logic to handle copy text to clipboard
@@ -45,10 +46,6 @@ export default function Home() {
   const linkedRedirect = () => {
     window.open("https://www.linkedin.com/in/jorge-verduzco/", "_blank");
   }
-
-
-
-
 
 
   return (
@@ -114,8 +111,8 @@ export default function Home() {
           </a>
         </div>
 
-        <div>LinkedIn</div>
-        <div>Projects</div>
+        
+
       </div>
     </div>
   );
