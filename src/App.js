@@ -190,6 +190,16 @@ export default function Home() {
             <p style={{ paddingLeft: "5%", paddingRight: "5%", fontSize: "18px" }}><VscCircleFilled /> Integrated Google Maps API to enable location based services and Yelp API for comprehensive data on street vendors</p>
 
             <p style={{ paddingLeft: "5%", paddingRight: "5%", fontSize: "18px" }}><VscCircleFilled /> Implemented Google Firebase SDK to enhance functionality by integrating our own street vendor location information on top of the data obtained from Yelp</p>
+
+            <div class="embed-responsive embed-responsive-16by9" style={{ justifyContent: "center", alignItems: "center", display: "flex", paddingBottom: "2%" }}>
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/WOeQ369RX9Y" allowfullscreen="true" ></iframe>
+            </div>
+
+            <button className="github-container">
+              <a href="https://github.com/Jrge-V/COMP584-vendyLA" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}> <AiFillGithub /> View on GitHub</a>
+            </button>
+
+
           </div>
 
           <div className="project-wrapper-2">
@@ -203,6 +213,10 @@ export default function Home() {
             <p style={{ paddingLeft: "5%", paddingRight: "5%", fontSize: "18px" }}><VscCircleFilled /> All requests saved to MongoDB and can be used for data analysis and worker efficiency</p>
 
             <p style={{ paddingLeft: "5%", paddingRight: "5%", fontSize: "18px" }}><VscCircleFilled /> Exports are basic CSV files to XLS files with timecode and thumbnail preview that can be uploaded to Frame.IO and/or Shotgrid</p>
+
+            <button className="github-container">
+              <a href="https://github.com/Jrge-V/Multimedia-System-Design---Marks-Automation-Script" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}> <AiFillGithub /> View on GitHub</a>
+            </button>
           </div>
 
           <div className="project-wrapper-1">
@@ -214,6 +228,14 @@ export default function Home() {
             <p style={{ paddingLeft: "5%", paddingRight: "5%", fontSize: "18px" }}><VscCircleFilled /> Utilized MongoDB for efficient data storage, ensuring smooth retrieval and management of music metadata</p>
 
             <p style={{ paddingLeft: "5%", paddingRight: "5%", fontSize: "18px" }}><VscCircleFilled /> Employed React.js on the front-end to create a user friendly interface and Node.js to handle server-side logic enabling communication between the front-end and MongoDB</p>
+
+            <div class="embed-responsive embed-responsive-16by9" style={{ justifyContent: "center", alignItems: "center", display: "flex", paddingBottom: "2%" }}>
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/1lO1hqTrV1Y" allowfullscreen="true" ></iframe>
+            </div>
+
+            <button className="github-container">
+              <a href="https://github.com/Jrge-V/MelloAmp-MusicPlayer" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}> <AiFillGithub /> View on GitHub</a>
+            </button>
 
           </div>
 
@@ -228,6 +250,10 @@ export default function Home() {
             <p style={{ paddingLeft: "5%", paddingRight: "5%", fontSize: "18px" }}><VscCircleFilled /> Designed functionally to add and removes names from waitlists, and saved and restored waitlists upon program termination</p>
 
             <p style={{ paddingLeft: "5%", paddingRight: "5%", fontSize: "18px" }}><VscCircleFilled /> Implemented commands for inventory management, including listing titles in order, finding items by title, and replacing/inserting new inventory</p>
+
+            <button className="github-container">
+              <a href="https://github.com/Jrge-V/InventoryManagement-VideoRentalShop" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}> <AiFillGithub /> View on GitHub</a>
+            </button>
           </div>
 
         </div>
