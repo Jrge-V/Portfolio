@@ -5,7 +5,8 @@ import clipboardCopy from "clipboard-copy";
 import { BsFillEmojiSmileFill } from "react-icons/bs";
 import { AiFillGithub } from "react-icons/ai";
 import { BsLinkedin } from "react-icons/bs";
-import { FiBookOpen } from "react-icons/fi";
+import { RiFilePaper2Fill } from "react-icons/ri";
+import { VscDebugBreakpointLog } from "react-icons/vsc";
 
 export default function Home() {
   // function and logic to handle copy text to clipboard
@@ -66,9 +67,9 @@ export default function Home() {
           />
         </div>
 
-        <div className="full-name">Jorge G. Verduzco Espinoza</div>
+        <div className="full-name"><h1>Jorge G. Verduzco Espinoza</h1></div>
 
-        <div className="header-image-container">
+        {/* <div className="header-image-container">
           <img
             className="header-image-static"
             src="/media/CSUNAlum.png"
@@ -79,39 +80,127 @@ export default function Home() {
             src="/media/CSUNALUMNI.gif"
             alt="alumni gif"
           />
-        </div>
+        </div> */}
 
-        <div className="email-wrapper">
-          <button onClick={handleCopyText} className="email-container">
-            <MdEmail />
-            jorgeg.verduzcoespinoza@gmail.com
-          </button>
-          {isCopied && (
-            <div className="popup-container">
-              <div className="popup-content">
-                <BsFillEmojiSmileFill />
-                <span>Copied to clipboard</span>
+        {/* Contact */}
+
+        <div className="contact-container">
+          {/* here will go the grid */}
+
+          <div className="email-wrapper">
+            <button onClick={handleCopyText} className="email-container">
+              <MdEmail />
+              jorgeg.verduzcoespinoza@gmail.com
+            </button>
+            {isCopied && (
+              <div className="popup-container">
+                <div className="popup-content">
+                  <BsFillEmojiSmileFill />
+                  <span>Copied to clipboard</span>
+
+                </div>
               </div>
-            </div>
-          )}
+            )}
+          </div>
+
+
+          <div className="resume-wrapper">
+            <a href="/files/resume.pdf" download className="resume-container">
+              <RiFilePaper2Fill />
+              Download Resume
+            </a>
+          </div>
+
+
+
+          <div className="github-wrapper">
+            <a href="https://github.com/Jrge-V" target="_blank" rel="noopener noreferrer" className="github-container" onClick={gitRedirect}>
+              <AiFillGithub />
+              github.com/Jrge-V
+            </a>
+          </div>
+
+
+          <div className="linked-wrapper">
+            <a href="https://www.linkedin.com/in/jorge-verduzco/" target="_blank" rel="noopener noreferrer" className="linked-container" onClick={linkedRedirect}>
+              <BsLinkedin />
+              linkedin.com/in/jorge-verduzco
+            </a>
+          </div>
+
         </div>
 
-        <div className="github-wrapper">
-        <a href="https://github.com/Jrge-V" target="_blank" rel="noopener noreferrer" className="github-container" onClick={gitRedirect}>
-            <AiFillGithub />
-            github.com/Jrge-V
-          </a>
+        <div>
+          <h2 className="about-me">About Me</h2>
         </div>
 
-
-        <div className="linked-wrapper">
-        <a href="https://www.linkedin.com/in/jorge-verduzco/" target="_blank" rel="noopener noreferrer" className="linked-container" onClick={linkedRedirect}>
-            <BsLinkedin />
-            linkedin.com/in/jorge-verduzco
-          </a>
+        <div className="education-container">
+          <h3 style={{ textAlign: "center" }}>Education</h3>
+          <p style={{ textAlign: "center" }}>Aug 2019 - May 2023</p>
+          <p style={{ textAlign: "center", fontSize: "20px", fontWeight: "bold" }}>California State University Northridge <VscDebugBreakpointLog /> Bachelor of Science in Computer Science</p>
+          <p style={{ paddingLeft: "5%", paddingRight: "5%", fontSize: "20px" }}>Coursework: Multimedia System Design, Advanced Web Engeneering, Database Design, Language Design and Compilers, Human-Computer Interaction, Combinatorial Algorithms, Automota, Advanced Data Structures, Operating Systems, Discrete Structures. </p>
         </div>
 
-        
+        <div className="experience-skills-container">
+          <div className="experience-container">
+            <h3 style={{ textAlign: "center" }}>Experience</h3>
+            <p style={{ textAlign: "center" }}>Summer 2018</p>
+            <p style={{ textAlign: "center", fontSize: "15px", fontWeight: "bold" }}>Salvadoran American Leadership and Educational Fund</p>
+            <p style={{ paddingLeft: "5%", paddingRight: "5%", fontSize: "15px", fontWeight: "bold", textAlign: "center" }}>Community Engagement Volunteer - Nonprofit Org </p>
+
+            <p style={{ paddingLeft: "5%", paddingRight: "5%", fontSize: "18px" }}><VscDebugBreakpointLog /> Collaborated with a diverse team of volunteers and staff, committed to making a positive impact by bridging gaps and providing valuable resources to underserved communities</p>
+
+            <p style={{ paddingLeft: "5%", paddingRight: "5%", fontSize: "18px" }}><VscDebugBreakpointLog /> Actively informed parents about citizenship services, ensuring they had access to resources and support</p>
+
+            <p style={{ paddingLeft: "5%", paddingRight: "5%", fontSize: "18px" }}><VscDebugBreakpointLog /> Engaged with students to promote Summer Bridge programs, providing information and guidance to help them make informed decisions about their educational pathways</p>
+
+          </div>
+          <div className="skills-container">
+            <h3 style={{ textAlign: "center" }}>Skills</h3>
+
+            <p style={{ paddingLeft: "5%", paddingRight: "5%", fontSize: "15px", fontWeight: "bold" }}><VscDebugBreakpointLog /> Programming:</p>
+
+
+            <p style={{ paddingLeft: "5%", paddingRight: "5%", fontSize: "18px" }}>Python, Java, JavaScript, HTML, CSS, React, Node.js, MongoDB, Firebase, SQL</p>
+
+            <p style={{ paddingLeft: "5%", paddingRight: "5%", fontSize: "15px", fontWeight: "bold" }}><VscDebugBreakpointLog /> Development Tools:</p>
+
+            <p style={{ paddingLeft: "5%", paddingRight: "5%", fontSize: "18px" }}>Visual Studio Code, Eclipse, IntelliJ, PyCharm, Git</p>
+
+            <p style={{ paddingLeft: "5%", paddingRight: "5%", fontSize: "15px", fontWeight: "bold" }}><VscDebugBreakpointLog /> Other:</p>
+
+            <p style={{ paddingLeft: "5%", paddingRight: "5%", fontSize: "18px" }}>Jira, Postman, Trello, Figma</p>
+
+          </div>
+        </div>
+
+        <div>
+          <h2 className="about-me">Projects</h2>
+        </div>
+
+        <div className="projects-container">
+
+          <div className="project-wrapper-1">
+            <h3 style={{ textAlign: "center" }}>VendyLA - Street Vending Business Locator</h3>
+            <p style={{ textAlign: "center" }}>April 2023 - May 2023</p>
+          </div>
+
+          <div className="project-wrapper-2">
+            <h3 style={{ textAlign: "center" }}>Multimedia System Design - Marks Automation Script</h3>
+            <p style={{ textAlign: "center" }}>January 2023 - May 2023</p>
+          </div>
+
+          <div className="project-wrapper-1">
+            <h3 style={{ textAlign: "center" }}>MelloAmp - DMCA Free Music Player</h3>
+            <p style={{ textAlign: "center" }}>August 2022 - May 2023</p>
+          </div>
+
+          <div className="project-wrapper-2">
+            <h3 style={{ textAlign: "center" }}>Video Rental Shop Inventroy Management System</h3>
+            <p style={{ textAlign: "center" }}>Summer 2021</p>
+          </div>
+
+        </div>
 
       </div>
     </div>
