@@ -7,6 +7,7 @@ import { AiFillGithub } from "react-icons/ai";
 import { BsLinkedin } from "react-icons/bs";
 import { RiFilePaper2Fill } from "react-icons/ri";
 import { VscDebugBreakpointLog, VscCircleFilled } from "react-icons/vsc";
+import { SiGlitch } from "react-icons/si";
 
 export default function Home() {
   // function and logic to handle copy text to clipboard
@@ -169,7 +170,7 @@ export default function Home() {
 
             <p style={{ paddingLeft: "5%", paddingRight: "5%", fontSize: "15px", fontWeight: "bold" }}><VscDebugBreakpointLog /> Other:</p>
 
-            <p style={{ paddingLeft: "5%", paddingRight: "5%", fontSize: "18px" }}>Jira, Postman, Trello, Figma</p>
+            <p style={{ paddingLeft: "5%", paddingRight: "5%", fontSize: "18px" }}>Jira, Postman, Trello, Figma, Canva</p>
 
           </div>
         </div>
@@ -195,9 +196,11 @@ export default function Home() {
               <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/WOeQ369RX9Y" allowfullscreen="true" ></iframe>
             </div>
 
-            <button className="github-container">
-              <a href="https://github.com/Jrge-V/COMP584-vendyLA" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}> <AiFillGithub /> View on GitHub</a>
-            </button>
+            <div className="github-proj-wrapper">
+              <button className="github-proj-container">
+                <a href="https://github.com/Jrge-V/COMP584-vendyLA" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}> <AiFillGithub /> View on GitHub</a>
+              </button>
+            </div>
 
 
           </div>
@@ -214,9 +217,11 @@ export default function Home() {
 
             <p style={{ paddingLeft: "5%", paddingRight: "5%", fontSize: "18px" }}><VscCircleFilled /> Exports are basic CSV files to XLS files with timecode and thumbnail preview that can be uploaded to Frame.IO and/or Shotgrid</p>
 
-            <button className="github-container">
-              <a href="https://github.com/Jrge-V/Multimedia-System-Design---Marks-Automation-Script" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}> <AiFillGithub /> View on GitHub</a>
-            </button>
+            <div className="github-proj-wrapper">
+              <button className="github-proj-container">
+                <a href="https://github.com/Jrge-V/Multimedia-System-Design---Marks-Automation-Script" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}> <AiFillGithub /> View on GitHub</a>
+              </button>
+            </div>
           </div>
 
           <div className="project-wrapper-1">
@@ -233,9 +238,11 @@ export default function Home() {
               <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/1lO1hqTrV1Y" allowfullscreen="true" ></iframe>
             </div>
 
-            <button className="github-container">
-              <a href="https://github.com/Jrge-V/MelloAmp-MusicPlayer" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}> <AiFillGithub /> View on GitHub</a>
-            </button>
+            <div className="github-proj-wrapper">
+              <button className="github-proj-container">
+                <a href="https://github.com/Jrge-V/MelloAmp-MusicPlayer" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}> <AiFillGithub /> View on GitHub</a>
+              </button>
+            </div>
 
           </div>
 
@@ -251,12 +258,42 @@ export default function Home() {
 
             <p style={{ paddingLeft: "5%", paddingRight: "5%", fontSize: "18px" }}><VscCircleFilled /> Implemented commands for inventory management, including listing titles in order, finding items by title, and replacing/inserting new inventory</p>
 
-            <button className="github-container">
-              <a href="https://github.com/Jrge-V/InventoryManagement-VideoRentalShop" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}> <AiFillGithub /> View on GitHub</a>
-            </button>
+            <div className="github-proj-wrapper">
+              <button className="github-proj-container">
+                <a href="https://github.com/Jrge-V/InventoryManagement-VideoRentalShop" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}> <AiFillGithub /> View on GitHub</a>
+              </button>
+            </div>
           </div>
 
         </div>
+
+
+        <div>
+          <h2 className="more-container">More</h2>
+        </div>
+
+
+        <div className="projects-container">
+
+          <div className="more-proj-wrapper-1">
+
+            <div className="more-github-proj-wrapper">
+              <button className="more-github-proj-container">
+                <a href="https://github.com/Jrge-V?tab=repositories" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit', marginLeft: "20%" }}> <AiFillGithub /></a>
+              </button>
+            </div>
+          </div>
+
+          <div className="more-proj-wrapper-2">
+            <div className="more-github-proj-wrapper">
+              <button className="more-github-proj-container">
+                <a href="https://glitch.com/@JorgeV" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: "magenta", marginLeft: "20%" }}><SiGlitch /></a>
+              </button>
+            </div>
+          </div>
+        </div>
+
+
 
       </div>
     </div>
