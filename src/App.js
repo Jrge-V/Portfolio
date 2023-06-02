@@ -61,13 +61,14 @@ export default function Home() {
             paddingTop: "50px",
           }}
         >
-          <img
+          {/* <img
             className="profile-image"
             src="/media/Jorge2.jpg"
             alt="profile"
-          />
+          /> */}
         </div>
 
+        <div className="intro"><h3>Hi!, I'm </h3></div>
         <div className="full-name"><h1>Jorge G. Verduzco Espinoza</h1></div>
 
         {/* <div className="header-image-container">
