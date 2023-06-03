@@ -288,7 +288,7 @@ export default function Home() {
           <div className="more-proj-wrapper-2">
             <div className="more-github-proj-wrapper">
               <button className="more-github-proj-container">
-                <a href="https://glitch.com/@JorgeV" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: "magenta", marginLeft: "20%" }}><SiGlitch /></a>
+                <a href="https://glitch.com/@JorgeV/class-projects" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: "magenta", marginLeft: "20%" }}><SiGlitch /></a>
               </button>
             </div>
           </div>
