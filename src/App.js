@@ -107,9 +107,9 @@ export default function Home() {
 
 
           <div className="resume-wrapper">
-            <a href="/Resume-JorgeVerduzco.pdf" download className="resume-container">
+            <a href="https://drive.google.com/file/d/1pjUbXNR25kRQRAdyv4PH9r-kpBOwM2xi/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="resume-container">
               <RiFilePaper2Fill />
-              Download Resume
+              View Resume
             </a>
           </div>
 
