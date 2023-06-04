@@ -55,7 +55,7 @@ export default function Home() {
       <div>
         <div
           style={{
-            display: "flex",
+            display: "grid",
             alignItems: "center",
             justifyContent: "center",
             paddingTop: "50px",
@@ -274,7 +274,7 @@ export default function Home() {
         </div>
 
 
-        <div className="projects-container">
+        <div className="projects-container-2">
 
           <div className="more-proj-wrapper-1">
 
