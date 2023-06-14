@@ -43,6 +43,7 @@ export default function Home() {
   }, [isCopied]);
 
 
+
   return (
     <div className="background-image">
       <div className="grid-container">
@@ -103,9 +104,20 @@ export default function Home() {
           <h2>About Me</h2>
         </div>
 
-        <div className="about-me-container">
-
+        <div class="about-me-buttons">
+          <div class="button-1">
+            <button>B1</button>
+          </div>
+          <div class="button-2">
+            <button>B2</button>
+          </div>
+          <div class="button-3">
+            <button>B3</button>
+          </div>
         </div>
+
+        <div class="about-me-container"></div>
+
 
 
         {/* <div className="education-container">

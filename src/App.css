@@ -253,12 +253,43 @@
   grid-column: span 16;
 }
 
+.about-me-buttons {
+  display: grid;
+  grid-column: 5/13;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.button-1 {
+  color: aliceblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-2 {
+  color: aliceblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.button-3 {
+  color: aliceblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
 .about-me-container {
   display: grid;
   grid-column: 3/15;
-  /* grid-template-columns: repeat(2, 1fr); */
   gap: 20px;
   padding-top: 5%;
+  color: aliceblue;
+  align-items: center;
+  justify-content: center;
 }
 
 
