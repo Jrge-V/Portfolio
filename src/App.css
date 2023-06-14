@@ -1,31 +1,25 @@
 /* profile */
 
-/* .profile-image {
-  border: 4px;
-  border-style: solid;
-  border-color: black;
-  border-radius: 80px;
-  width: 140px;
-  height: 140px;
-  box-shadow: 5px 5px 5px #01010178;
-
-} */
-
 
 /* modern background */
 .background-image {
-  background-image: url("/public/media/sunsetbg.jpg");
+  background-color: #202020;
   background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  align-items: center;
-  justify-content: center;
   min-height: 100vh;
   min-width: 100vh;
   overflow-x: hidden;
   /*remove white space at the bottom of the background */
+}
 
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: auto;
+  /* gap in between each cell is 16px (STICK TO 8's [8, 16, 24, 32...]) */
+  column-gap: 16px;
+  /* add some margins */
+  margin: 16px;
 }
 
 /* introduction */
@@ -36,7 +30,9 @@
   font-size: large;
   padding-top: 10px;
   padding-bottom: 2px;
-
+  grid-column: span 16;
+  align-self: center;
+  justify-self: center;
   color: whitesmoke;
 }
 
@@ -45,46 +41,20 @@
   text-decoration: underline;
   text-align: center;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: large;
+  font-size: 1rem;
   padding-bottom: 10px;
   color: whitesmoke;
   text-shadow: 1px 1px 1px rgb(159, 159, 159);
+  grid-column: span 16;
+  align-self: center;
+  justify-self: center;
 }
-
-
-/* CSUN LOGO */
-/* .header-image-container {
-  position: relative;
-  width: 450px;
-  height: 250px;
-  margin: auto;
-}
-
-.header-image-static,
-.header-image-gif {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: 4px solid black;
-  border-radius: 80px;
-}
-
-.header-image-gif {
-  opacity: 0;
-  transition: opacity 0.1s ease-in-out;
-}
-
-.header-image-container:hover .header-image-gif {
-  opacity: 1;
-  cursor: pointer;
-} */
 
 
 /* Contact info */
 .contact-container {
   display: grid;
+  grid-column: 3/15;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
   padding-top: 5%;
@@ -94,54 +64,55 @@
 
 /* email styling */
 
-.email-wrapper {
-  padding-top: 15px;
-}
 
 .email-container {
-  background-image: linear-gradient(-45deg, rgb(198, 198, 198), rgb(218, 198, 255));
-  font-size: x-large;
+  align-self: center;
+  justify-self: center;
+}
+
+.email-button {
+  font-size: 1.2rem;
+  width: 24rem;
+  height: 4rem;
   font-family: Arial, Helvetica, sans-serif;
+  background-image: linear-gradient(-45deg, rgb(198, 198, 198), rgb(218, 198, 255));
   color: black;
-  width: 500px;
-  height: 70px;
-  margin: auto;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
   border: 2px solid black;
-  border-radius: 80px;
-  padding-top: 10px;
+  border-radius: 2rem;
 }
 
-.email-container svg {
-  margin-right: 15px;
+.email-button svg {
+  margin-right: 0.5rem;
 }
 
-.email-container:hover {
+.email-button:hover {
   cursor: pointer;
   background-image: linear-gradient(-45deg, rgb(255, 254, 254), rgb(218, 198, 255));
 }
 
-
-
 .popup-container {
   position: fixed;
-  bottom: 20px;
+  bottom: 10%;
+  /* Position from the bottom */
   left: 50%;
-  transform: translateX(-50%);
+  /* Position from the left */
+  transform: translate(-50%, -50%);
+  /* Center the element */
+  align-self: center;
+  justify-self: center;
   background-color: rgba(3, 212, 13, 0.8);
   color: rgb(255, 255, 255);
   padding: 10px 20px;
   border-radius: 10px;
-  display: flex;
   align-items: center;
+  justify-content: center;
   animation: fade-in 0.5s ease-in-out;
+  animation-fill-mode: forwards;
 }
 
+
+
 .popup-content {
-  display: flex;
   align-items: center;
   gap: 10px;
 }
@@ -170,33 +141,34 @@
 
 /* resume styling */
 
-.resume-wrapper {
-  padding-top: 20px;
-}
-
 .resume-container {
-  background-image: linear-gradient(-45deg, rgb(183, 255, 144), rgb(216, 216, 216));
-  font-size: x-large;
+  align-self: center;
+  justify-self: center;
+}
+
+.resume-button {
+  font-size: 1.2rem;
+  width: 24rem;
+  height: 4rem;
   font-family: Arial, Helvetica, sans-serif;
+  background-image: linear-gradient(-45deg, rgb(183, 255, 144), rgb(216, 216, 216));
   color: black;
-  width: 500px;
-  height: 50px;
-  margin: auto;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
   border: 2px solid black;
-  border-radius: 80px;
-  padding-top: 10px;
+  border-radius: 2rem;
   text-decoration: none;
+  display: flex;
+  /* Added to make the content center-aligned */
+  align-items: center;
+  /* Added to make the content center-aligned */
+  justify-content: center;
+  /* Added to make the content center-aligned */
 }
 
-.resume-container svg {
-  margin-right: 15px;
+.resume-button svg {
+  margin-right: 0.5rem;
 }
 
-.resume-container:hover {
+.resume-button:hover {
   cursor: pointer;
   background-image: linear-gradient(-45deg, rgb(183, 255, 144), rgba(255, 255, 255));
 }
@@ -205,73 +177,68 @@
 
 /* github styling */
 
-.github-wrapper {
-  padding-top: 20px;
-}
 
 .github-container {
-  background-image: linear-gradient(-45deg, rgb(126, 126, 126), rgb(255, 255, 255));
-  font-size: x-large;
+  align-self: center;
+  justify-self: center;
+}
+
+.github-button {
+  font-size: 1.2rem;
+  width: 24rem;
+  height: 4rem;
   font-family: Arial, Helvetica, sans-serif;
+  background-image: linear-gradient(-45deg, rgb(126, 126, 126), rgb(255, 255, 255));
   color: black;
-  width: 500px;
-  height: 50px;
-  margin: auto;
+  border: 2px solid black;
+  border-radius: 2rem;
+  text-decoration: none;
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: center;
-  border: 2px solid black;
-  border-radius: 80px;
-  padding-top: 10px;
-  text-decoration: none;
 }
 
-.github-container svg {
-  margin-right: 15px;
+.github-button svg {
+  margin-right: 0.5rem;
 }
 
-.github-container:hover {
+.github-button:hover {
   cursor: pointer;
   background-image: linear-gradient(-45deg, rgb(189, 189, 189, 0.5), rgba(255, 255, 255));
 }
 
 
-
-
 /* LinkedIn styling */
 
-.linked-wrapper {
-  padding-top: 20px;
-}
 
 .linked-container {
-  background-image: linear-gradient(-45deg, rgb(38, 172, 244), rgb(255, 255, 255));
-  font-size: x-large;
+  align-self: center;
+  justify-self: center;
+}
+
+.linked-button {
+  font-size: 1.2rem;
+  width: 24rem;
+  height: 4rem;
   font-family: Arial, Helvetica, sans-serif;
+  background-image: linear-gradient(-45deg, rgb(38, 172, 244), rgb(255, 255, 255));
   color: black;
-  width: 500px;
-  height: 50px;
-  margin: auto;
+  border: 2px solid black;
+  border-radius: 2rem;
+  text-decoration: none;
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: center;
-  border: 2px solid black;
-  border-radius: 80px;
-  padding-top: 10px;
-  text-decoration: none;
 }
 
-.linked-container svg {
-  margin-right: 15px;
+.linked-button svg {
+  margin-right: 0.5rem;
 }
 
-.linked-container:hover {
+.linked-button:hover {
   cursor: pointer;
   background-image: linear-gradient(-45deg, rgb(132, 209, 250), rgba(255, 255, 255));
 }
-
 
 /* About me */
 
@@ -279,11 +246,24 @@
   color: ghostwhite;
   text-align: center;
   font-family: monospace;
-  font-size: xx-large;
-  padding-top: 15%;
-  padding-bottom: 2%;
+  font-size: 1rem;
+  padding-top: 5%;
   text-shadow: 1px 1px 1px rgb(159, 159, 159);
+  grid-row: 4;
+  grid-column: span 16;
 }
+
+.about-me-container {
+  display: grid;
+  grid-column: 3/15;
+  /* grid-template-columns: repeat(2, 1fr); */
+  gap: 20px;
+  padding-top: 5%;
+}
+
+
+
+
 
 .education-container {
   background-color: rgb(204, 255, 255);

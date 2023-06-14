@@ -9,6 +9,7 @@ import { RiFilePaper2Fill } from "react-icons/ri";
 import { VscDebugBreakpointLog, VscCircleFilled } from "react-icons/vsc";
 import { SiGlitch } from "react-icons/si";
 
+
 export default function Home() {
   // function and logic to handle copy text to clipboard
   const [textToCopy, setTextToCopy] = useState(
@@ -41,73 +42,37 @@ export default function Home() {
     };
   }, [isCopied]);
 
-  const gitRedirect = () => {
-    window.open("https://github.com/Jrge-V", "_blank");
-  };
-
-  const linkedRedirect = () => {
-    window.open("https://www.linkedin.com/in/jorge-verduzco/", "_blank");
-  }
-
 
   return (
     <div className="background-image">
-      <div>
-        <div
-          style={{
-            display: "grid",
-            alignItems: "center",
-            justifyContent: "center",
-            paddingTop: "50px",
-          }}
-        >
-          {/* <img
-            className="profile-image"
-            src="/media/Jorge2.jpg"
-            alt="profile"
-          /> */}
-        </div>
+      <div className="grid-container">
 
         <div className="intro"><h3>Hi!, I'm </h3></div>
         <div className="full-name"><h1>Jorge G. Verduzco Espinoza</h1></div>
 
-        {/* <div className="header-image-container">
-          <img
-            className="header-image-static"
-            src="/media/CSUNAlum.png"
-            alt="header"
-          />
-          <img
-            className="header-image-gif"
-            src="/media/CSUNALUMNI.gif"
-            alt="alumni gif"
-          />
-        </div> */}
-
         {/* Contact */}
-
         <div className="contact-container">
-          {/* here will go the grid */}
 
-          <div className="email-wrapper">
-            <button onClick={handleCopyText} className="email-container">
+
+          <div className="email-container">
+            <button onClick={handleCopyText} className="email-button">
               <MdEmail />
               jorgeg.verduzcoespinoza@gmail.com
             </button>
-            {isCopied && (
-              <div className="popup-container">
-                <div className="popup-content">
-                  <BsFillEmojiSmileFill />
-                  <span>Copied to clipboard</span>
-
-                </div>
-              </div>
-            )}
           </div>
 
+          {isCopied && (
+            <div className="popup-container">
+              <div className="popup-content">
+                <BsFillEmojiSmileFill />
+                <span>Copied to clipboard</span>
+              </div>
+            </div>
+          )}
 
-          <div className="resume-wrapper">
-            <a href="https://drive.google.com/file/d/1pjUbXNR25kRQRAdyv4PH9r-kpBOwM2xi/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="resume-container">
+
+          <div className="resume-container">
+            <a className="resume-button" href="https://drive.google.com/file/d/1pjUbXNR25kRQRAdyv4PH9r-kpBOwM2xi/view?usp=sharing" target="_blank" rel="noopener noreferrer">
               <RiFilePaper2Fill />
               View Resume
             </a>
@@ -115,16 +80,17 @@ export default function Home() {
 
 
 
-          <div className="github-wrapper">
-            <a href="https://github.com/Jrge-V" target="_blank" rel="noopener noreferrer" className="github-container" onClick={gitRedirect}>
+
+          <div className="github-container">
+            <a className="github-button" href="https://github.com/Jrge-V" target="_blank" rel="noopener noreferrer">
               <AiFillGithub />
               github.com/Jrge-V
             </a>
           </div>
 
 
-          <div className="linked-wrapper">
-            <a href="https://www.linkedin.com/in/jorge-verduzco/" target="_blank" rel="noopener noreferrer" className="linked-container" onClick={linkedRedirect}>
+          <div className="linked-container">
+            <a className="linked-button" href="https://www.linkedin.com/in/jorge-verduzco/" target="_blank" rel="noopener noreferrer" >
               <BsLinkedin />
               linkedin.com/in/jorge-verduzco
             </a>
@@ -132,11 +98,17 @@ export default function Home() {
 
         </div>
 
-        <div>
-          <h2 className="about-me">About Me</h2>
+
+        <div className="about-me">
+          <h2>About Me</h2>
         </div>
 
-        <div className="education-container">
+        <div className="about-me-container">
+
+        </div>
+
+
+        {/* <div className="education-container">
           <h3 style={{ textAlign: "center" }}>Education</h3>
           <p style={{ textAlign: "center" }}>Aug 2019 - May 2023</p>
           <p style={{ textAlign: "center", fontSize: "20px", fontWeight: "bold" }}>California State University Northridge <VscDebugBreakpointLog /> Bachelor of Science in Computer Science</p>
@@ -292,7 +264,7 @@ export default function Home() {
               </button>
             </div>
           </div>
-        </div>
+        </div> */}
 
 
 
