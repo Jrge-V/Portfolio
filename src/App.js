@@ -17,6 +17,7 @@ export default function Home() {
   );
 
   const [isCopied, setIsCopied] = useState(false);
+  const [buttonMessage, setButtonMessage] = useState("");
 
   const handleCopyText = () => {
     clipboardCopy(textToCopy)
@@ -42,6 +43,115 @@ export default function Home() {
     };
   }, [isCopied]);
 
+
+  //buttons
+
+  const [activeButtonIndex, setActiveButtonIndex] = useState(0);
+
+  const buttonMessages = [
+
+    // message 1
+    <div>
+
+      <div className="education-title">
+        <h3>
+          Education
+        </h3>
+      </div>
+
+      <div className="education-title">
+        <p>
+          Aug 2019 - May 2023
+        </p>
+      </div>
+
+      <div className="education-school">
+        <p >California State University Northridge <VscDebugBreakpointLog /> Bachelor of Science in Computer Science</p>
+      </div>
+
+      <div className="education-coursework-title">
+        <p>
+          Relevant Coursework
+        </p>
+      </div>
+
+      <div className="education-coursework-container">
+        <div>
+          <p>
+            Multimedia System Design
+          </p>
+        </div>
+        <div>
+          <p>
+            Advanced Web Engeneering
+          </p>
+        </div>
+        <div>
+          <p>
+            Database Design
+          </p>
+        </div>
+        <div>
+          <p>
+            Language Design and Compilers
+          </p>
+        </div>
+        <div>
+          <p>
+            Human-Computer Interaction
+          </p>
+        </div>
+        <div>
+          <p>
+            Combinatorial Algorithms
+          </p>
+        </div>
+        <div>
+          <p>
+            Software Engineering
+          </p>
+        </div>
+        <div>
+          <p>
+            Advanced Data Structures
+          </p>
+        </div>
+        <div>
+          <p>
+            Operating Systems
+          </p>
+        </div>
+        <div>
+          <p>
+            Discrete Structures
+          </p>
+        </div>
+        <div>
+          <p>
+            Concepts of Programming Languages
+          </p>
+        </div>
+        <div>
+          <p>
+            Automota
+          </p>
+        </div>
+      </div>
+
+    </div>,
+
+
+    //message 2
+    "Message for button 2",
+
+
+    //message 3
+    "Message for button 3",
+  ];
+
+  const handleButtonClick = (index) => {
+    setActiveButtonIndex(index);
+  };
 
 
   return (
@@ -104,19 +214,38 @@ export default function Home() {
           <h2>About Me</h2>
         </div>
 
-        <div class="about-me-buttons">
-          <div class="button-1">
-            <button>B1</button>
+        <div className="about-me-button-container">
+          <div className="about-me-button-layout">
+            <button
+              className={`about-me-buttons ${activeButtonIndex === 0 ? "active" : ""}`}
+              onClick={() => handleButtonClick(0)}
+              id="button-1"
+            >
+              Education
+            </button>
           </div>
-          <div class="button-2">
-            <button>B2</button>
+          <div className="about-me-button-layout">
+            <button
+              className={`about-me-buttons ${activeButtonIndex === 1 ? "active" : ""}`}
+              onClick={() => handleButtonClick(1)}
+              id="button-2"
+            >
+              Experience
+            </button>
           </div>
-          <div class="button-3">
-            <button>B3</button>
+          <div className="about-me-button-layout">
+            <button
+              className={`about-me-buttons ${activeButtonIndex === 2 ? "active" : ""}`}
+              onClick={() => handleButtonClick(2)}
+              id="button-3"
+            >
+              Skills
+            </button>
           </div>
         </div>
 
-        <div class="about-me-container"></div>
+        <div className="about-me-container">{buttonMessages[activeButtonIndex]}</div>
+
 
 
 

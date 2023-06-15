@@ -253,34 +253,41 @@
   grid-column: span 16;
 }
 
-.about-me-buttons {
+.about-me-button-container {
   display: grid;
   grid-column: 5/13;
   grid-template-columns: repeat(3, 1fr);
 }
 
-.button-1 {
-  color: aliceblue;
+.about-me-button-layout {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.button-2 {
-  color: aliceblue;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
+.about-me-buttons {
+  color: black;
+  background-color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  width: 12rem;
+  height: 2rem;
+  border: 2px solid black;
+  border-radius: 5px;
+  transition: background 0.5s;
 }
 
-.button-3 {
-  color: aliceblue;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
+.about-me-buttons:hover {
+  background: linear-gradient(white, white 50%, rgb(253, 253, 100) 50%, rgb(253, 253, 100));
+  cursor: pointer;
+  background-position: 100% 100%;
+  background-size: 100% 200%;
 }
+
+.about-me-buttons.active {
+  background-color: rgb(253, 253, 100);
+}
+
 
 .about-me-container {
   display: grid;
@@ -292,6 +299,28 @@
   justify-content: center;
 }
 
+.education-title {
+  text-align: center;
+}
+
+.education-school {
+  text-align: center;
+  font-weight: 1rem;
+  font-weight: bold;
+}
+
+.education-coursework-title {
+  font-size: 1rem;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.education-coursework-container {
+  display: grid;
+  grid-column: 5/13;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+}
 
 
 
