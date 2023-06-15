@@ -8,6 +8,7 @@ import { BsLinkedin } from "react-icons/bs";
 import { RiFilePaper2Fill } from "react-icons/ri";
 import { VscDebugBreakpointLog, VscCircleFilled } from "react-icons/vsc";
 import { SiGlitch } from "react-icons/si";
+import AboutMe from "./AboutMe";
 
 
 export default function Home() {
@@ -42,117 +43,6 @@ export default function Home() {
       clearTimeout(timeoutId);
     };
   }, [isCopied]);
-
-
-  //buttons
-
-  const [activeButtonIndex, setActiveButtonIndex] = useState(0);
-
-  const buttonMessages = [
-
-    // message 1
-    <div>
-
-      <div className="education-title">
-        <h3>
-          Education
-        </h3>
-      </div>
-
-      <div className="education-title">
-        <p>
-          Aug 2019 - May 2023
-        </p>
-      </div>
-
-      <div className="education-school">
-        <p >California State University Northridge <VscDebugBreakpointLog /> Bachelor of Science in Computer Science</p>
-      </div>
-
-      <div className="education-coursework-title">
-        <p>
-          Relevant Coursework
-        </p>
-      </div>
-
-      <div className="education-coursework-container">
-        <div>
-          <p>
-            Multimedia System Design
-          </p>
-        </div>
-        <div>
-          <p>
-            Advanced Web Engeneering
-          </p>
-        </div>
-        <div>
-          <p>
-            Database Design
-          </p>
-        </div>
-        <div>
-          <p>
-            Language Design and Compilers
-          </p>
-        </div>
-        <div>
-          <p>
-            Human-Computer Interaction
-          </p>
-        </div>
-        <div>
-          <p>
-            Combinatorial Algorithms
-          </p>
-        </div>
-        <div>
-          <p>
-            Software Engineering
-          </p>
-        </div>
-        <div>
-          <p>
-            Advanced Data Structures
-          </p>
-        </div>
-        <div>
-          <p>
-            Operating Systems
-          </p>
-        </div>
-        <div>
-          <p>
-            Discrete Structures
-          </p>
-        </div>
-        <div>
-          <p>
-            Concepts of Programming Languages
-          </p>
-        </div>
-        <div>
-          <p>
-            Automota
-          </p>
-        </div>
-      </div>
-
-    </div>,
-
-
-    //message 2
-    "Message for button 2",
-
-
-    //message 3
-    "Message for button 3",
-  ];
-
-  const handleButtonClick = (index) => {
-    setActiveButtonIndex(index);
-  };
-
 
   return (
     <div className="background-image">
@@ -214,47 +104,15 @@ export default function Home() {
           <h2>About Me</h2>
         </div>
 
-        <div className="about-me-button-container">
-          <div className="about-me-button-layout">
-            <button
-              className={`about-me-buttons ${activeButtonIndex === 0 ? "active" : ""}`}
-              onClick={() => handleButtonClick(0)}
-              id="button-1"
-            >
-              Education
-            </button>
-          </div>
-          <div className="about-me-button-layout">
-            <button
-              className={`about-me-buttons ${activeButtonIndex === 1 ? "active" : ""}`}
-              onClick={() => handleButtonClick(1)}
-              id="button-2"
-            >
-              Experience
-            </button>
-          </div>
-          <div className="about-me-button-layout">
-            <button
-              className={`about-me-buttons ${activeButtonIndex === 2 ? "active" : ""}`}
-              onClick={() => handleButtonClick(2)}
-              id="button-3"
-            >
-              Skills
-            </button>
-          </div>
-        </div>
-
-        <div className="about-me-container">{buttonMessages[activeButtonIndex]}</div>
+        <AboutMe />
 
 
 
 
-        {/* <div className="education-container">
-          <h3 style={{ textAlign: "center" }}>Education</h3>
-          <p style={{ textAlign: "center" }}>Aug 2019 - May 2023</p>
-          <p style={{ textAlign: "center", fontSize: "20px", fontWeight: "bold" }}>California State University Northridge <VscDebugBreakpointLog /> Bachelor of Science in Computer Science</p>
-          <p style={{ paddingLeft: "5%", paddingRight: "5%", fontSize: "20px" }}>Coursework: Multimedia System Design, Advanced Web Engeneering, Database Design, Language Design and Compilers, Human-Computer Interaction, Combinatorial Algorithms, Automota, Advanced Data Structures, Operating Systems, Discrete Structures. </p>
-        </div>
+
+
+
+        {/* 
 
         <div className="experience-skills-container">
           <div className="experience-container">

@@ -320,12 +320,170 @@
   grid-column: 5/13;
   grid-template-columns: repeat(3, 1fr);
   text-align: center;
+  color: rgb(183, 238, 255);
+}
+
+
+.experience-content {
+  padding-top: 1rem;
+  color: rgb(183, 238, 255);
+  font-size: 1rem;
+  text-align: center;
+}
+
+.skills-info-4 {
+  display: grid;
+  grid-column: 5/13;
+  grid-template-columns: repeat(4, 1fr);
+  color: rgb(183, 238, 255);
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.skills-info-3 {
+  display: grid;
+  grid-column: 5/13;
+  grid-template-columns: repeat(3, 1fr);
+  color: rgb(183, 238, 255);
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.experience-logo-6 {
+  display: grid;
+  grid-column: 5/13;
+  grid-template-columns: repeat(6, 1fr);
+  text-align: center;
+  font-size: 3rem;
+  gap: 2rem;
+}
+
+.experience-logo-5 {
+  display: grid;
+  grid-column: 5/13;
+  grid-template-columns: repeat(5, 1fr);
+  text-align: center;
+  font-size: 3rem;
+  gap: 2rem;
+}
+
+.experience-logo-4 {
+  display: grid;
+  grid-column: 5/13;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: center;
+  font-size: 3rem;
+  gap: 2rem;
+}
+
+.experience-logo-3 {
+  display: grid;
+  grid-column: 5/13;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  font-size: 3rem;
+  gap: 2rem;
+}
+
+.python-logo {
+  color: #FFD43B;
+}
+
+.java-logo {
+  color: #FBA91A
+}
+
+.js-logo {
+  color: #F0DB4F;
+}
+
+.html-logo {
+  color: #E34C26;
+}
+
+.css-logo {
+  color: #3C99DC;
+}
+
+.react-logo {
+  color: #61DBFB;
+}
+
+.node-logo {
+  color: #68A063;
+}
+
+.mongo-logo {
+  color: #4DB33D
+}
+
+.firebase-logo {
+  color: #F5820D
+}
+
+.sql-logo {
+  color: #00758F
+}
+
+.php-logo {
+  color: #787CB5;
+}
+
+.myadmin-logo {
+  color: #F89C0E;
+}
+
+.vsc-logo {
+  color: #0078d7;
+}
+
+.pycharm-logo {
+  color: rgb(255, 255, 255);
+}
+
+.eclipse-logo {
+  color: #443583;
+}
+
+.intellij-logo {
+  color: rgb(255, 255, 255);
+}
+
+.git-logo {
+  color: #F1502F;
+}
+
+.postman-logo {
+  color: #EF5B25;
+}
+
+.jira-logo {
+  color: #0052cc;
+}
+
+.trello-logo {
+  color: #008FE4;
+}
+
+.figma-logo {
+  color: rgb(255, 255, 255);
+}
+
+.canva-logo {
+  color: #20C4CB;
+}
+
+.skill-pad {
+  padding-top: 4rem;
 }
 
 
 
 
-.education-container {
+
+
+
+/* .education-container {
   background-color: rgb(204, 255, 255);
   border: 2px solid rgb(0, 0, 0);
   border-radius: 35px;
@@ -335,7 +493,7 @@
   align-items: center;
   justify-content: center;
   box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.5);
-}
+} */
 
 .experience-skills-container {
   display: grid;
