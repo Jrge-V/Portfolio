@@ -6,7 +6,6 @@ import { BsFillEmojiSmileFill } from "react-icons/bs";
 import { AiFillGithub } from "react-icons/ai";
 import { BsLinkedin } from "react-icons/bs";
 import { RiFilePaper2Fill } from "react-icons/ri";
-import { VscDebugBreakpointLog, VscCircleFilled } from "react-icons/vsc";
 import { SiGlitch } from "react-icons/si";
 import AboutMe from "./AboutMe";
 import Projects from "./Projects";
@@ -114,6 +113,27 @@ export default function Home() {
 
 
         <Projects />
+
+        <div className="about-me">
+          <h2>More</h2>
+        </div>
+
+        <div className="more-container">
+
+          <div className="more-content">
+            <a className="more-content-button" href="https://github.com/Jrge-V?tab=repositories" target="_blank" rel="noopener noreferrer">
+              <AiFillGithub />
+            </a>
+          </div>
+
+          <div className="more-content">
+            <a className="more-content-glitch-button " href="https://glitch.com/@JorgeV/class-projects" target="_blank" rel="noopener noreferrer">
+              <SiGlitch />
+            </a>
+          </div>
+
+        </div>
+
 
 
 

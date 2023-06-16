@@ -361,6 +361,8 @@ const AboutMe = () => {
                         Education
                     </button>
                 </div>
+
+
                 <div className="about-me-button-layout">
                     <button
                         className={`about-me-buttons ${activeButtonIndex === 1 ? "active" : ""}`}
@@ -370,6 +372,7 @@ const AboutMe = () => {
                         Experience
                     </button>
                 </div>
+
                 <div className="about-me-button-layout">
                     <button
                         className={`about-me-buttons ${activeButtonIndex === 2 ? "active" : ""}`}
