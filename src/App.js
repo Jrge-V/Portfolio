@@ -96,7 +96,6 @@ export default function Home() {
               linkedin.com/in/jorge-verduzco
             </a>
           </div>
-
         </div>
 
 
