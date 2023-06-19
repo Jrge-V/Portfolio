@@ -99,7 +99,7 @@ export default function Home() {
         </div>
 
 
-        <div className="blog-container ">
+        {/* <div className="blog-container ">
           <div className="blogpost-container ">
             <a className="blogpost-button" href="https://jrge-v.github.io/Blog/" target="_blank" rel="noopener noreferrer" >
               <BsFillChatSquareTextFill />
@@ -107,7 +107,7 @@ export default function Home() {
             </a>
           </div>
 
-        </div>
+        </div> */}
 
 
         <div className="about-me">
