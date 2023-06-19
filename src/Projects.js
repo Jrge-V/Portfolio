@@ -105,9 +105,6 @@ const Projects = () => {
 
                 <p><VscCircleFilled /> Employed React.js on the front-end to create a user friendly interface and Node.js to handle server-side logic enabling communication between the front-end and MongoDB
                 </p>
-
-                <p><VscCircleFilled /> Implemented Google Firebase SDK to enhance functionality by integrating our own street vendor location information on top of the data obtained from Yelp
-                </p>
             </div>
             <div class="embed-responsive embed-responsive-16by9" className="yt-video">
                 <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/1lO1hqTrV1Y" allowfullscreen="true" ></iframe>

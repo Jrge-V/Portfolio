@@ -60,6 +60,14 @@
   padding-top: 5%;
 }
 
+.blog-container {
+  display: grid;
+  grid-column: 3/15;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
+  padding-top: 5%;
+}
+
 
 
 /* email styling */
@@ -240,6 +248,40 @@
   cursor: pointer;
   background-image: linear-gradient(-45deg, rgb(132, 209, 250), rgba(255, 255, 255));
 }
+
+/* blog styling */
+.blogpost-container {
+  align-self: center;
+  justify-self: center;
+}
+
+.blogpost-button {
+  font-size: 1.2rem;
+  width: 24rem;
+  height: 4rem;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: linear-gradient(-45deg, rgb(242, 251, 66), rgb(255, 255, 255));
+  color: black;
+  border: 2px solid black;
+  border-radius: 2rem;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.blogpost-button svg {
+  margin-right: 0.5rem;
+}
+
+.blogpost-button:hover {
+  cursor: pointer;
+  background-image: linear-gradient(-45deg, rgb(255, 250, 152), rgba(255, 255, 255));
+}
+
+
+
+
 
 /* About me */
 
@@ -495,7 +537,7 @@
   background-color: rgb(0, 0, 0, .40);
   border: 2px solid rgb(255, 255, 255);
   border-radius: 48px;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .slideshow-content-grid {
@@ -511,10 +553,10 @@
 
 .slide {
   display: inline-block;
-  height: 45rem;
   width: 100%;
   border-radius: 40px;
   overflow: hidden;
+  vertical-align: top;
 }
 
 /* Slideshow Buttons */
@@ -578,6 +620,7 @@
   justify-content: center;
   display: flex;
   padding-top: 2rem;
+  padding-bottom: 2rem;
 
 }
 
@@ -719,6 +762,12 @@
     height: 5rem;
   }
 
+  .blogpost-button {
+    font-size: 1.5rem;
+    width: 32rem;
+    height: 5rem;
+  }
+
   .slideshowDot {
     display: inline-block;
     height: 2.5rem;
@@ -811,9 +860,9 @@
     font-size: 1.5rem;
   }
 
-  .slide {
+  /* .slide {
     height: 64rem;
-  }
+  } */
 
 
   .github-proj-button {
@@ -841,6 +890,7 @@
 
 @media only screen and (max-width: 480px) {
 
+
   .intro {
     font-size: 2rem;
   }
@@ -849,14 +899,21 @@
     font-size: 1.8rem;
   }
 
+  .contact-container,
+  .blog-container {
+    justify-content: center;
+  }
+
+
   .email-button {
-    font-size: 2.5rem;
-    width: 48rem;
-    height: 7rem;
+    font-size: 1.8rem;
+    width: 32rem;
+    height: 8rem;
   }
 
   .popup-content span {
     font-size: 2.5rem;
+
   }
 
   .popup-content svg {
@@ -864,21 +921,27 @@
   }
 
   .resume-button {
-    font-size: 2.5rem;
-    width: 48rem;
-    height: 7rem;
+    font-size: 2.4rem;
+    width: 32rem;
+    height: 8rem;
   }
 
   .github-button {
-    font-size: 2.5rem;
-    width: 48rem;
-    height: 7rem;
+    font-size: 2.4rem;
+    width: 32rem;
+    height: 8rem;
   }
 
   .linked-button {
-    font-size: 2.5rem;
-    width: 48rem;
-    height: 7rem;
+    font-size: 2.0rem;
+    width: 32rem;
+    height: 8rem;
+  }
+
+  .blogpost-button {
+    font-size: 2.0rem;
+    width: 32rem;
+    height: 8rem;
   }
 
   .slideshowDot {
@@ -909,9 +972,14 @@
     padding-top: 10rem;
   }
 
+  .about-me-button-container {
+    justify-content: center;
+  }
+
   .education-title {
     font-size: 2rem;
   }
+
 
   .education-school {
     text-align: center;
@@ -949,18 +1017,22 @@
 
   .experience-logo-6 {
     font-size: 6rem;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .experience-logo-5 {
     font-size: 6rem;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .experience-logo-4 {
     font-size: 6rem;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .experience-logo-3 {
     font-size: 6rem;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .project-title {
@@ -975,15 +1047,25 @@
     font-size: 2.4rem;
   }
 
-  .slide {
+  /* .slide {
     height: 110rem;
-  }
+  } */
 
 
   .github-proj-button {
-    font-size: 4rem;
-    width: 36rem;
+    font-size: 3rem;
+    width: 22rem;
     height: 7rem;
+    text-align: center;
+  }
+
+  .github-proj-button svg {
+    font-size: 8rem;
+  }
+
+  .more-container {
+    grid-template-columns: 1fr;
+    justify-content: center;
   }
 
   .more-content-button {

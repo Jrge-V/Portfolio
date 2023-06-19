@@ -4,7 +4,7 @@ import { MdEmail } from "react-icons/md";
 import clipboardCopy from "clipboard-copy";
 import { BsFillEmojiSmileFill } from "react-icons/bs";
 import { AiFillGithub } from "react-icons/ai";
-import { BsLinkedin } from "react-icons/bs";
+import { BsLinkedin, BsFillChatSquareTextFill } from "react-icons/bs";
 import { RiFilePaper2Fill } from "react-icons/ri";
 import { SiGlitch } from "react-icons/si";
 import AboutMe from "./AboutMe";
@@ -94,6 +94,17 @@ export default function Home() {
             <a className="linked-button" href="https://www.linkedin.com/in/jorge-verduzco/" target="_blank" rel="noopener noreferrer" >
               <BsLinkedin />
               linkedin.com/in/jorge-verduzco
+            </a>
+          </div>
+
+        </div>
+
+
+        <div className="blog-container ">
+          <div className="blogpost-container ">
+            <a className="blogpost-button" href="https://jrge-v.github.io/Blog/" target="_blank" rel="noopener noreferrer" >
+              <BsFillChatSquareTextFill />
+              Check out my Blog!
             </a>
           </div>
 
