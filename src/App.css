@@ -534,6 +534,10 @@
   background-color: #c4c4c4;
 }
 
+.slideshowDot:hover {
+  background-color: #EEEE9B;
+}
+
 .slideshowDot.active {
   background-color: #6a0dad;
 }
