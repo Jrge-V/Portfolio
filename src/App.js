@@ -146,41 +146,6 @@ export default function Home() {
 
 
 
-
-
-
-
-
-
-
-        {/* 
-        <div>
-          <h2 className="more-container">More</h2>
-        </div>
-
-
-        <div className="projects-container-2">
-
-          <div className="more-proj-wrapper-1">
-
-            <div className="more-github-proj-wrapper">
-              <button className="more-github-proj-container">
-                <a href="https://github.com/Jrge-V?tab=repositories" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit', marginLeft: "20%" }}> <AiFillGithub /></a>
-              </button>
-            </div>
-          </div>
-
-          <div className="more-proj-wrapper-2">
-            <div className="more-github-proj-wrapper">
-              <button className="more-github-proj-container">
-                <a href="https://glitch.com/@JorgeV/class-projects" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: "magenta", marginLeft: "20%" }}><SiGlitch /></a>
-              </button>
-            </div>
-          </div>
-        </div> */}
-
-
-
       </div>
     </div>
   );
